@@ -1,0 +1,38 @@
+.header{
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  background-color: #111217ee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.header_title{
+  color: #ddd;
+  font-size: 5vh;
+  margin-left: 5vh;
+}
+
+.header_menu{
+  display: flex;
+  gap:5vh;
+}
+
+.header_menu_content{
+  margin-right: 5vh;
+}
+
+.header_menu_item{
+  color: #ddd;
+  list-style: none;
+  font-size: 3vh;
+  transition: all .5s ease-in-out;
+}
+
+.header_menu_item:hover{
+  color: rgb(255, 181, 111);
+  cursor: pointer;
+}
