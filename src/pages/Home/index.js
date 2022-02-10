@@ -10,6 +10,9 @@ import BairroLiberdade from '../../images/BairroLiberdade.jpeg';
 import Dados from '../../components/Dados';
 import InicioCidade from '../../images/AveninaPaulista.jpg';
 import Arrow from '../../images/arrow.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 function App() {
 
@@ -32,10 +35,15 @@ function App() {
 
     Lá você encontra o <b>Museu Histórico da Imigração Japonesa no Brasil</b>, o Bunkyo. Além disso, o bairro tem decoração temática com luminárias japonesas por todo lado.
   </div>
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <Header />
-      <div className='banner'>
+      <div className='banner' id='top'>
 
         <video className='banner_video' autoPlay loop muted>
           <source src={Banner} type='video/mp4' />
@@ -45,29 +53,38 @@ function App() {
         <img src={Arrow} alt="Seta" className='home_arrow' />
       </div>
 
-      <h1 className='home_title'>Pontos Turisticos</h1>
-      <PontoTuristico
-        title="Museu de Arte"
-        image={Museu}
-        desc={museu} />
+      <div id='pontosturisticos'>
+        <h1 className='home_title' >Pontos Turisticos</h1>
+        <PontoTuristico
+          title="Museu de Arte"
+          image={Museu}
+          desc={museu}
+          aosIMG="fade-right"
+          aosDESC="fade" />
 
-      <PontoTuristico
-        title="Parque Ibirapuera"
-        image={Parque}
-        desc={parque}
-        invert="invert" />
+        <PontoTuristico
+          title="Parque Ibirapuera"
+          image={Parque}
+          desc={parque}
+          invert="invert"
+          aosIMG="fade-left"
+          aosDESC="fade" />
 
-      <PontoTuristico
-        title="Bairro Liberdade"
-        image={BairroLiberdade}
-        desc={bairroliberdade} />
+        <PontoTuristico
+          title="Bairro Liberdade"
+          image={BairroLiberdade}
+          desc={bairroliberdade}
+          aosIMG="fade-right"
+          aosDESC="fade" />
+      </div>
 
-      <Dados />
 
-      <div className='InicioCidade'>
+      <Dados id="dados" />
+
+      <div id="historia" className='InicioCidade'>
         <div className='home_inicioCidade'>
           <h1 className="InicioCidade_title">Inicio da Cidade</h1>
-          <img src={InicioCidade} alt="AvenidaPaulista" className='IncioCidade_img' />
+          <img data-aos="fade" src={InicioCidade} alt="AvenidaPaulista" className='IncioCidade_img' />
           <p className='home_desc'>No dia <b>22 de janeiro do ano de 1532</b>, teve início a colonização oficial (por Martim Afonso de Souza) da localidade que, hoje, conhecemos como <b>São Paulo</b>, com a fundação da mais antiga vila do Brasil: Vila de São Vicente. Em 1554, os jesuítas depois de subir a serra, decidem construir um colégio onde, além de alfabetizar, também catequizariam índios, no alto de uma colina na região de Piratininga. A cidade de São Paulo cresceu ao redor do colégio.</p>
         </div>
       </div>

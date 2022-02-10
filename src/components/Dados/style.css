@@ -19,10 +19,6 @@
   transition: .3s ease-in;
 }
 
-.dados_card:hover{
-  transform: translateY(-10px);
-}
-
 .dados_card_title{
   text-align: center;
   color: #fff;
