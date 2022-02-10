@@ -1,0 +1,37 @@
+.dados {
+  display: flex;
+  gap: 2vh;
+  width: 80%;
+  margin: 10vh auto 20vh;
+}
+
+.dados_title{
+  text-align: center;
+  font-size: 8vh;
+  margin-top: 25vh;
+}
+
+.dados_card{
+  width: 33%;
+  padding: 5vh 1.5vh 8vh ;
+  background-color: #111217ee;
+  border-radius: 10px;
+  transition: .3s ease-in;
+}
+
+.dados_card:hover{
+  transform: translateY(-10px);
+}
+
+.dados_card_title{
+  text-align: center;
+  color: #fff;
+}
+
+.dados_card_desc{
+  text-align: center;
+  margin-top: 4vh;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #ddd;
+}
