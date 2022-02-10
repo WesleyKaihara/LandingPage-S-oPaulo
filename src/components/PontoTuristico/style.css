@@ -1,0 +1,33 @@
+.pontoturistico{
+  display: flex;
+  height: 50vh;
+  width: 80%;
+  gap: 5vh;
+  margin: 5vh auto 20vh;
+}
+
+.invert{
+  flex-direction: row-reverse;
+}
+
+.pontoturistico_title{
+  text-align: center;
+  font-size: 5vh;
+  margin-top: 10vh;
+}
+
+.pontoturistico_img{
+  width: 100%;
+}
+
+.pontoturistico_content_img,.pontoturistico_content{
+  width: 50%;
+}
+
+.pontoturistico_content{
+  line-height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vh;
+}
