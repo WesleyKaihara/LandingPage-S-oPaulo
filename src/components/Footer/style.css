@@ -15,3 +15,13 @@
   width: 80%;
   justify-content:space-around;
 }
+
+.referencia{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.referencia_content{
+  margin-top: 2vh;
+}
