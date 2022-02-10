@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  background-color: #111217ee;
+  color: #ddd;
+  justify-content: space-between;
+  padding: 5vh;
+}
+
+.footer_local{
+  display: flex;
+  gap: 3vh;
+  width: 80%;
+  justify-content:space-around;
+}
