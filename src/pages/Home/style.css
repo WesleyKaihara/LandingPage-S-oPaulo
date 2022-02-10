@@ -1,0 +1,65 @@
+.banner{
+  width: 100%;
+}
+
+.banner_video{
+  width: 100%;
+  top: 0;
+  z-index: -999;
+}
+
+.home_arrow_position{
+  text-align: center;
+  width: 100%;
+}
+.home_arrow{
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  margin:-15vh auto;
+  animation: seta .5s infinite alternate;
+}
+
+@keyframes seta {
+  0% {
+      transform: translateY(10px);
+  }
+  100% {
+      transform: translateY(-10);
+  }
+}
+
+.home_title{
+  text-align: center;
+  font-size: 8vh;
+  margin-top: 5vh;
+}
+
+.home_inicioCidade{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.home_desc{
+  line-height: 4vh;
+  text-align: justify;
+  color: #ddd;
+}
+
+.InicioCidade_title{
+  font-size: 8vh;
+  text-align: center;
+  color: #ddd;
+}
+
+.InicioCidade{
+  padding: 5vh;
+  background-color: #111217ee;
+}
+
+.IncioCidade_img{
+  width: 70%;
+  height: 60vh;
+  margin: 5vh;
+}
