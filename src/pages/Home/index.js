@@ -43,14 +43,16 @@ function App() {
   return (
     <div>
       <Header />
-      <div className='banner' id='top'>
+      <div className='home_banner'>
+        <div className='banner' id='top'>
 
-        <video className='banner_video' autoPlay loop muted>
-          <source src={Banner} type='video/mp4' />
-        </video>
-      </div>
-      <div className='home_arrow_position'>
-        <img src={Arrow} alt="Seta" className='home_arrow' />
+          <video className='banner_video' autoPlay loop muted>
+            <source src={Banner} type='video/mp4' />
+          </video>
+        </div>
+        <div className='home_arrow_position'>
+          <img src={Arrow} alt="Seta" className='home_arrow' />
+        </div>
       </div>
 
       <div id='pontosturisticos'>

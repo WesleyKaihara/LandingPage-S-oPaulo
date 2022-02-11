@@ -31,3 +31,17 @@
   font-weight: bold;
   color: #ddd;
 }
+
+@media(max-width:1200px){
+  .dados {
+   flex-direction: column;
+  }
+  .dados_card{
+    width: 100%;
+    padding: 5vh 1.5vh 12vh ;
+  }
+  .dados_title{
+    font-size: 5vh;
+    margin: 3vh;
+  }
+}

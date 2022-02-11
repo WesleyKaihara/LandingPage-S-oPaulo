@@ -37,3 +37,16 @@
   color: rgb(255, 181, 111);
   cursor: pointer;
 }
+
+@media(max-width:1200px){
+  .header{
+    justify-content: center;
+  }
+  .header_title{
+    font-size: 5vh;
+    margin: auto;
+  }
+  .header_menu_content{
+    display: none;
+  }
+}

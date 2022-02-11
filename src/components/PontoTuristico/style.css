@@ -31,3 +31,13 @@
   justify-content: center;
   font-size: 2vh;
 }
+
+@media(max-width:1200px){
+  .pontoturistico{
+    flex-direction: column;
+    margin-bottom: 30vh;
+  }
+  .pontoturistico_content_img,.pontoturistico_content{
+    width: 100%;
+  }
+}

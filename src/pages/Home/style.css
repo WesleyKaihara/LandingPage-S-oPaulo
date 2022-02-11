@@ -63,3 +63,38 @@
   height: 60vh;
   margin: 5vh;
 }
+
+@media(max-width:1400px){
+  .IncioCidade_img{
+    width: 100%;
+    height:40vh;
+    margin: 0;
+    padding-bottom: 3vh;
+  }
+
+  .home_desc{
+    line-height: 4vh;
+    text-align: justify;
+  }
+
+  .home_inicioCidade{
+    width: 80%;
+    text-align: center;
+  }
+
+  .InicioCidade_title{
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+  
+  .home_inicioCidade{
+    width: 100%;
+  }
+
+  .home_title{
+    font-size: 5vh;
+  }
+  .home_arrow_position{
+   display: none;
+  }
+}

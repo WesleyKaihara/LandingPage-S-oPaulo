@@ -25,3 +25,11 @@
 .referencia_content{
   margin-top: 2vh;
 }
+
+@media(max-width:1200px){
+  .footer_local{
+   flex-direction: column;
+    gap: 3vh;
+    width: 100%;
+  }
+}
